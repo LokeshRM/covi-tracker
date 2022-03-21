@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+  </head>
+  <body>
+    <div class="body">
+      <div class="nav">
+        <div class="heading">CoviData</div>
+      </div>
+
+      <div class="report">
+        <div class="name">India</div>
+        <div class="totalcases">
+          <div class="title">Total-Cases</div>
+          <div class="value">Loadin..</div>
+          <div class="newvalue"></div>
+        </div>
+        <div class="recovered">
+          <div class="title">Total-Recovered</div>
+          <div class="value">Loadin..</div>
+          <div class="newvalue"></div>
+        </div>
+        <div class="deaths">
+          <div class="title">Total-Deaths</div>
+          <div class="value">Loadin..</div>
+          <div class="newvalue"></div>
+        </div>
+        <div class="active">
+          <div class="title">Active-Cases</div>
+          <div class="value">Loadin..</div>
+        </div>
+      </div>
+      <div class="btn">
+        <div>
+          <select name="time" id="select">
+            <option value="2 weeks">2 weeks</option>
+            <option value="1 month">1 month</option>
+            <option value="6 months">6 months</option>
+            <option value="year">1 year</option>
+            <option value="2 years">2 years</option>
+          </select>
+        </div>
+        <div>
+          <select name="graph" id="select2">
+            <option value="line">line</option>
+            <option value="bar">bar</option>
+          </select>
+        </div>
+      </div>
+      <div class="statistics">
+        <canvas id="chart_covid"></canvas>
+      </div>
+      <div class="map">
+        <div class="heading">WorlData</div>
+      </div>
+    </div>
+    <div id="regions_div"></div>
+
+    <script src="./scripts/maps.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"
+      integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
